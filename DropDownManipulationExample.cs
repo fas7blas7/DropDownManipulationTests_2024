@@ -16,6 +16,11 @@ namespace DropDownManipulation
             chromeOptions.AddArgument("--no-first-run");
             chromeOptions.AddArgument("--no-default-browser-check");
             chromeOptions.AddArgument("--disable-search-engine-choice-screen");
+            chromeOptions.AddArgument("headless");
+            chromeOptions.AddArgument("no-sandbox");
+            chromeOptions.AddArgument("disable-dev-shm-usage");
+            chromeOptions.AddArgument("disable-gpu");
+            chromeOptions.AddArgument("window-size=1920x1080");
 
             driver = new ChromeDriver(chromeOptions);
             driver.Url = "https://practice.bpbonline.com/";
