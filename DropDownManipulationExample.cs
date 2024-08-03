@@ -24,9 +24,7 @@ namespace DropDownManipulation
 
             driver = new ChromeDriver(chromeOptions);
             driver.Url = "https://practice.bpbonline.com/";
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
-                
-            
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);         
         }
 
         [TearDown]
